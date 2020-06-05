@@ -49,7 +49,9 @@
     transition: margin-left .5s;
     padding: 16px;
     height:100vh;
-    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    background-color: transparent;
+    color:#FF8C00;
+    
 }
   
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
@@ -59,8 +61,191 @@
 }
 
 #nutrition{
-    height:100vh;
+    width:100%;
+    display:grid;
+    
+    grid-auto-flow: dense;
+    grid-template:  "1fr 1fr 1fr 1fr 1fr 1fr" 10vh
+                    "1fr 1fr 1fr 1fr 1fr 1fr" 10vh 
+                    "1fr 1fr 1fr 1fr 1fr 1fr" 10vh
+                    "1fr 1fr 1fr 1fr 1fr 1fr" 10vh 
+                    "1fr 1fr 1fr 1fr 1fr 1fr" 10vh
+                    "1fr 1fr 1fr 1fr 1fr 1fr" 10vh 
+                    "1fr 1fr 1fr 1fr 1fr 1fr" 10vh
+                    "1fr 1fr 1fr 1fr 1fr 1fr" 10vh 
+                    "1fr 1fr 1fr 1fr 1fr 1fr" 10vh
+                    "1fr 1fr 1fr 1fr 1fr 1fr" 10vh ;
+
+}
+#nutrition a{
+    color:white;
+    text-align: center;
+    justify-content: center;
+}
+#nutrition .box{
+    position:relative;
+}
+/* 1 */
+#nutrition .box.amino{
+    background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+    color:	steelblue;
+    grid-row: span 2;
+}
+#amino{
+    background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+    color:	steelblue;
+}
+/* 2 */
+#nutrition .box.biotin{
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+}
+/* 3 */
+#nutrition .box.calcium{
+    background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+}
+/* 4 */
+#nutrition .box.choline{
+    background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+    grid-row: span 2;
+}
+
+/* 5 */
+#nutrition .box.chromium{
+    background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+}
+
+/* 6 */
+#nutrition .box.copper{
     background-image: linear-gradient(to top, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
+}
+
+/* 7 */
+#nutrition .box.fiber{
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    grid-row: span 2;
+}
+/* 8 */
+#nutrition .box.flavonoids{
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+    
+}
+/* 9 */
+#nutrition .box.folate{
+    background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);
+    
+}
+/* 10 */
+#nutrition .box.iodine{
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    grid-row: span 2;
+}
+/* 11 */
+#nutrition .box.iron{
+    background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+    grid-row: span 2;
+}
+/* 12 */
+#nutrition .box.lutein{
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    grid-column: span 2;
+}
+/* 13 */
+#nutrition .box.magnesium{
+    background-image: linear-gradient(to top, #ebc0fd 0%, #d9ded8 100%);
+    grid-column: span 2;
+}
+/* 14 */
+#nutrition .box.manganese{
+    background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+    grid-row: span 2;
+}
+
+/* 15 */
+#nutrition .box.molybdenum{
+    background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+    
+}
+/* 16 */
+#nutrition .box.omega{
+    background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+    grid-row: span 2;
+}
+
+/* 17 */
+#nutrition .box.pantothenic{
+    background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+}
+/* 18 */
+#nutrition .box.phosphorus{
+    background-image: linear-gradient(to right, #e4afcb 0%, #b8cbb8 0%, #b8cbb8 0%, #e2c58b 30%, #c2ce9c 64%, #7edbdc 100%);
+    grid-row: span 2;
+}
+/* 19 */
+#nutrition .box.potassium{
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+}
+/* 20 */
+#nutrition .box.protein{
+    background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+}
+
+/* 21 */
+#nutrition .box.selenium{
+    background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+    grid-row: span 2;
+}
+
+/* 22 */
+#nutrition .box.a{
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    grid-row: span 2;
+}
+
+/* 23 */
+#nutrition .box.b1{
+    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+    grid-column: span 2;
+}
+/* 24 */
+#nutrition .box.b2{
+    background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
+}
+/* 25 */
+#nutrition .box.b12{
+    background-image: linear-gradient(to top, #d299c2 0%, #fef9d7 100%);
+    grid-row: span 2;
+}
+
+/* 26 */
+#nutrition .box.b3{
+    background-image: linear-gradient(60deg, #abecd6 0%, #fbed96 100%);
+    grid-row: span 2;
+}
+/* 27 */
+#nutrition .box.b6{
+    background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
+    
+}
+/* 28 */
+#nutrition .box.c{
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    grid-row: span 2;
+}
+/* 29 */
+#nutrition .box.d{
+    background-image: linear-gradient(45deg, #874da2 0%, #c43a30 100%);
+}
+/* 30 */
+#nutrition .box.e{
+    background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
+}
+/* 31 */
+#nutrition .box.k{
+    background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
+}
+/* 32 */
+#nutrition .box.zinc{
+    background-image: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%);
 }
 /*slide up css*/
 div.slide-up{
@@ -69,7 +254,7 @@ div.slide-up{
 }
 
 div.slide-up li{
-    animation:5slide-up;
+    animation:15s slide-up;
     margin-top: 0%;
 }
 
