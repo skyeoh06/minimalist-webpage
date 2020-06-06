@@ -279,12 +279,8 @@
     grid-auto-flow: dense;
     grid-template:  "1fr 1fr" 30vh
                     "1fr 1fr" 30vh 
-                    
                     ;
     background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
-                    
-    
-
 }
 @media(max-width:768px){
     #cholineCont{
@@ -298,6 +294,21 @@
         width: 100%;
         height: auto;
     }
+}
+
+#cholineCont .box.choline2{
+    grid-column: span 2;
+    
+}
+.choline3 img{
+    padding-top: 1vh;
+    width: auto;
+    height: auto;
+    border-radius: 50%;
+}
+
+.cholineText{
+    color:#6B8E23;
 }
 /* 5 */
 #nutrition .box.chromium{
