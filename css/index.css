@@ -50,7 +50,7 @@
     padding: 16px;
     height:100vh;
     background-color: transparent;
-    color:#FF8C00;
+    color:#2e8857;
     
 }
   
@@ -75,15 +75,51 @@
                     "1fr 1fr 1fr 1fr 1fr 1fr" 10vh 
                     "1fr 1fr 1fr 1fr 1fr 1fr" 10vh
                     "1fr 1fr 1fr 1fr 1fr 1fr" 10vh ;
+    
+
+}
+
+@media(max-width:768px){
+    #nutrition{
+        grid-template:  "1fr 1fr " 50px
+                        "1fr 1fr " 50px
+                        "1fr 1fr " 50px
+                        "1fr 1fr " 50px
+                        "1fr 1fr " 50px
+                        "1fr 1fr " 50px
+                        "1fr 1fr " 50px
+                        "1fr 1fr " 50px
+                        "1fr 1fr " 50px
+                        "1fr 1fr " 50px
+                        "1fr 1fr " 50px
+                        "1fr 1fr " 50px
+                        "1fr 1fr " 50px
+                        "1fr 1fr " 50px
+                        "1fr 1fr " 50px
+                        "1fr 1fr " 50px
+                        "1fr 1fr " 50px
+                        "1fr 1fr " 50px
+                        "1fr 1fr " 50px
+                        "1fr 1fr " 50px
+                        "1fr 1fr " 50px
+                        "1fr 1fr " 50px
+                        "1fr 1fr " 50px
+                        "1fr 1fr " 50px
+                        
+                      ;
+    }
+
 
 }
 #nutrition a{
-    color:white;
-    text-align: center;
-    justify-content: center;
+    color:black;
+    
 }
 #nutrition .box{
     position:relative;
+    border:2px outset black;
+    text-align: center;
+    justify-content: center;
 }
 /* 1 */
 #nutrition .box.amino{
@@ -91,9 +127,52 @@
     color:	steelblue;
     grid-row: span 2;
 }
-#amino{
-    background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
-    color:	steelblue;
+.amino1 img{
+    border:5px outset #330867;
+}
+
+#aminoCont{
+    width:100%;
+    display:grid;
+    
+    grid-auto-flow: dense;
+    grid-template:  "1fr 1fr 1fr 1fr 1fr 1fr" 20vh
+                    "1fr 1fr 1fr 1fr 1fr 1fr" 20vh 
+                    "1fr 1fr 1fr 1fr 1fr 1fr" 20vh
+                    "1fr 1fr 1fr 1fr 1fr 1fr" 20vh 
+                    "1fr 1fr 1fr 1fr 1fr 1fr" 20vh
+                    ;
+
+}
+.aminoText{
+    background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+@media(max-width:768px){
+    #aminoCont{
+        grid-template:  "1fr 1fr 1fr " 50px
+        "1fr 1fr 1fr " 50px
+        "1fr 1fr 1fr " 50px
+                    ;
+    }
+    .amino1 img{
+        width: 100%;
+        height: auto;
+    }
+}
+#aminoCont .box.amino1{
+    grid-row: span 5;
+    grid-column: span 3;
+}
+#aminoCont .box.amino2{
+    grid-column: span 3;
+    grid-row: span 2;
+   
+}
+#aminoCont .box.amino3{
+    grid-column: span 3;
+    grid-row: span 3;
 }
 /* 2 */
 #nutrition .box.biotin{
@@ -254,7 +333,7 @@ div.slide-up{
 }
 
 div.slide-up li{
-    animation:15s slide-up;
+    animation:5s slide-up;
     margin-top: 0%;
 }
 
@@ -282,3 +361,4 @@ div.slide-up li{
         transform:rotateX(0deg);
     }
 }
+

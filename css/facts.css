@@ -1,0 +1,55 @@
+#facts{
+    background-color:#000001;
+}
+
+
+.facts-heading{
+    background-image: linear-gradient(to top, #4481eb 0%, #04befe 100%);
+    -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+#facts-description{
+    background-image: linear-gradient(to top, #4481eb 0%, #04befe 100%);
+    -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.swiper-container 
+{   
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    
+}
+.swiper-slide 
+{
+    background-position: center;
+    background-size: cover;
+    width: 35vw;
+    height: 75vh;
+    /*gradient border color*/
+    border:8px outset #c7eafd;
+    background-color: white;
+    
+}
+.swiper-slide .imgBx{
+    width: 100%;
+    height: 40vh;
+    overflow:hidden;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.swiper-slide .imgBx img{
+    padding-top:1vh;
+    width:100%;
+    height:100%
+}
+
+.swiper-slide .details p{
+    background-image: linear-gradient(to top, #4481eb 0%, #04befe 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 18px;
+}
