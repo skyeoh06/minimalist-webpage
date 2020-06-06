@@ -178,16 +178,127 @@
 #nutrition .box.biotin{
     background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
 }
+#biotinCont{
+    width:100%;
+    display:grid;
+    
+    grid-auto-flow: dense;
+    grid-template:  "1fr 1fr 1fr " 20vh
+                    "1fr 1fr 1fr " 20vh 
+                    "1fr 1fr 1fr " 20vh
+                    "1fr 1fr 1fr " 20vh 
+                    "1fr 1fr 1fr " 20vh
+                    ;
+
+}
+@media(max-width:768px){
+    #biotinCont{
+        grid-template:  "1fr " 50px
+        "1fr  " 50px
+        "1fr  " 50px
+                    ;
+    }
+    .biotin1 img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+.biotinText{
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+#biotinCont .box.biotin1{
+    grid-row: span 2;
+    
+}
+#biotinCont .box.biotin3{
+    grid-column: span 2;
+    
+}
+
 /* 3 */
 #nutrition .box.calcium{
     background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
 }
+
+.calciumText{
+    background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+#calciumCont{
+    width:100%;
+    display:grid;
+    grid-auto-flow: dense;
+    grid-template:  "1fr 1fr" 30vh
+                    "1fr 1fr" 30vh 
+                    
+                    ;
+    background-color: #573257;
+                    
+    
+
+}
+@media(max-width:768px){
+    #calciumCont{
+        grid-template:  "1fr " 50px
+        "1fr  " 50px
+        "1fr  " 50px
+                    ;
+        background-color: #573257;
+    }
+    .calcium3 img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+.calcium3 img{
+    border-radius: 50%;
+    width:25vw;
+    height:25vh;
+}
+#calciumCont .box.calcium2{
+    grid-column: span 2;
+    
+}
+
 /* 4 */
 #nutrition .box.choline{
     background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
     grid-row: span 2;
 }
 
+#cholineCont{
+    width:100%;
+    display:grid;
+    grid-auto-flow: dense;
+    grid-template:  "1fr 1fr" 30vh
+                    "1fr 1fr" 30vh 
+                    
+                    ;
+    background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+                    
+    
+
+}
+@media(max-width:768px){
+    #cholineCont{
+        grid-template:  "1fr " 50px
+        "1fr  " 50px
+        "1fr  " 50px
+                    ;
+        background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+    }
+    .choline3 img{
+        width: 100%;
+        height: auto;
+    }
+}
 /* 5 */
 #nutrition .box.chromium{
     background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
@@ -326,39 +437,3 @@
 #nutrition .box.zinc{
     background-image: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%);
 }
-/*slide up css*/
-div.slide-up{
-    height:200px;
-    overflow: hidden;
-}
-
-div.slide-up li{
-    animation:5s slide-up;
-    margin-top: 0%;
-}
-
-@keyframes slide-up{
-    from{
-        margin-top: 100%;
-        height:100%;
-    }
-    to{
-        margin-top:0%;
-        height:10%;
-    }
-}
-
-.container{
-    animation:transitionIn 0.75s
-}
-@keyframes transitionIn{
-    from{
-       opacity:0 ;
-       transform:rotateX(-10deg);
-    }
-    to{
-        opacity:1 ;
-        transform:rotateX(0deg);
-    }
-}
-
