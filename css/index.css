@@ -314,12 +314,77 @@
 #nutrition .box.chromium{
     background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
 }
+.chromiumText{
+    background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+#chromiumCont{
+    width:100%;
+    display:grid;
+    grid-auto-flow: dense;
+    grid-template:  "1fr 1fr 1fr" 30vh
+                    ;
+    
+}
+@media(max-width:768px){
+    #chromiumCont{
+        grid-template:  "1fr " 50px
+        "1fr  " 50px
+        "1fr  " 50px
+                    ;
+        
+    }
+    .chromium3 img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+.chromium3 img{
+    width: 25vw;
+    height: auto;
+}
 
 /* 6 */
 #nutrition .box.copper{
     background-image: linear-gradient(to top, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
 }
 
+#copperCont{
+    width:100%;
+    display:grid;
+    grid-auto-flow: dense;
+    grid-template:  "1fr 1fr 1fr" 30vh
+                    "1fr 1fr 1fr" 30vh
+                    ;
+    background-color: #7B68EE;
+}
+@media(max-width:768px){
+    #copperCont{
+        grid-template:  "1fr 1fr " 50px
+        "1fr 1fr  " 50px
+        "1fr 1fr " 50px
+                    ;
+        background-color:#7B68EE;
+    }
+    .copper3 img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+.copperText{
+    background-image: linear-gradient(to top, #ff9a9e 0%, #fecfef 99%, #fecfef 100%); 
+    -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+#copperCont .box.copper2{
+    grid-column: span 2;
+    
+}
 /* 7 */
 #nutrition .box.fiber{
     background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
