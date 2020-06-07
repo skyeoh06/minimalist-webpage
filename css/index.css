@@ -227,46 +227,28 @@
 .calciumText{
     background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
 	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px #FF0000;
+    
 }
-#calciumCont{
+  
+
+#calciumCont img{
+    border-radius: 1px;
     width:100%;
-    display:grid;
-    grid-auto-flow: dense;
-    grid-template:  "1fr 1fr" 30vh
-                    "1fr 1fr" 30vh 
-                    
-                    ;
-    background-color: #573257;
-                    
-    
-
+    height: auto;
 }
-@media(max-width:768px){
-    #calciumCont{
-        grid-template:  "1fr " 50px
-        "1fr  " 50px
-        "1fr  " 50px
-                    ;
-        background-color: #573257;
-    }
-    .calcium3 img{
-        width: 100%;
-        height: auto;
-    }
+.calcium1{
+    position: absolute;
+    top: 18vh;
+    left: 35vw;
 }
-
-
-.calcium3 img{
-    border-radius: 50%;
-    width:25vw;
-    height:25vh;
+.calcium2{
+    position: absolute;
+    top:38vh;
+    left: 35vw;
+    width:30vw;
 }
-#calciumCont .box.calcium2{
-    grid-column: span 2;
-    
-}
-
 /* 4 */
 #nutrition .box.choline{
     background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
@@ -317,78 +299,86 @@
 .chromiumText{
     background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
 	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-}
-#chromiumCont{
-    width:100%;
-    display:grid;
-    grid-auto-flow: dense;
-    grid-template:  "1fr 1fr 1fr" 30vh
-                    ;
-    
-}
-@media(max-width:768px){
-    #chromiumCont{
-        grid-template:  "1fr " 50px
-        "1fr  " 50px
-        "1fr  " 50px
-                    ;
-        
-    }
-    .chromium3 img{
-        width: 100%;
-        height: auto;
-    }
+    -webkit-text-fill-color: transparent;
+    font-style: oblique;
 }
 
 
-.chromium3 img{
-    width: 25vw;
+#chromiumCont img{
+    width: 100%;
     height: auto;
 }
 
+.chromium1{
+    position:absolute;
+    top:43vh;
+    left:16vw;
+    color:white;
+}
+
+.chromium2{
+    position:absolute;
+    top:53vh;
+    left:16vw;
+    color:white;
+}
 /* 6 */
 #nutrition .box.copper{
     background-image: linear-gradient(to top, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
 }
 
-#copperCont{
+#copperCont img{
     width:100%;
-    display:grid;
-    grid-auto-flow: dense;
-    grid-template:  "1fr 1fr 1fr" 30vh
-                    "1fr 1fr 1fr" 30vh
-                    ;
-    background-color: #7B68EE;
+    height:auto;
+    border-radius: 50%;
 }
-@media(max-width:768px){
-    #copperCont{
-        grid-template:  "1fr 1fr " 50px
-        "1fr 1fr  " 50px
-        "1fr 1fr " 50px
-                    ;
-        background-color:#7B68EE;
-    }
-    .copper3 img{
-        width: 100%;
-        height: auto;
-    }
-}
-
 .copperText{
-    background-image: linear-gradient(to top, #ff9a9e 0%, #fecfef 99%, #fecfef 100%); 
-    -webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+    
+    color:#3d2611;
+}
+.copper1{
+    position: absolute;
+    background-image: linear-gradient(to top, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
+    -webkit-background-clip: border-box;
+    top:45vh;
+    left:13vw;
+    border-radius: 3%;
 }
 
-#copperCont .box.copper2{
-    grid-column: span 2;
-    
+.copper2{
+    position: absolute;
+    top:23vh;
+    left:30vw;
+    width:50vw;
+    background-image: linear-gradient(to top, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
+    -webkit-background-clip: border-box;
+    border-radius: 3%;
 }
+
 /* 7 */
 #nutrition .box.fiber{
     background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
     grid-row: span 2;
+}
+.fiberText{
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    -webkit-background-clip: border-box;
+    color:#6588F6;
+}
+.fiber1{
+    position: absolute;
+    top:18vh;
+    left:12vw;
+}
+.fiber2{
+    position: absolute;
+    top:50vh;
+    left:12vw;
+}
+#fiberCont img{
+    width:100%;
+    border: 2px solid #f6d365;
+    border-radius: 2%;
 }
 /* 8 */
 #nutrition .box.flavonoids{
