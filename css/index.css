@@ -479,6 +479,38 @@
     background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
     grid-row : span 2;
 }
+
+.ironText{
+    background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+    -webkit-background-clip: border-box;
+    color:#BC8F8F;
+}
+#ironCont img{
+    width:100%;
+}
+
+.iron1{
+    position: absolute;
+    top:40vh;
+    left:12vw;
+    font-style: oblique;
+    background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+    -webkit-background-clip: border-box;
+    color:#BC8F8F;
+}
+
+.iron2{
+    position: absolute;
+    top:40vh;
+    left:52vw;
+    width:35vw;
+    font-style: inherit;
+    background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+    -webkit-background-clip: border-box;
+    color:#BC8F8F;
+    
+}
+
 /* 12 */
 #nutrition .box.lutein{
     background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
