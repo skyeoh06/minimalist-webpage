@@ -21,7 +21,7 @@ div.slide-up li{
 }
 /*transition in css*/
 .container{
-    animation:transitionIn 0.75s
+    animation:transitionIn 1s
 }
 @keyframes transitionIn{
     from{
@@ -147,13 +147,13 @@ div.slide-right li {
   left:0;
   width:100%;
   height: 100%;
-  transform-origin: top;
+  transform-origin: right;
   animation: open 1s ease-in-out forwards;
+  background-image: linear-gradient(to right, #3ab5b0 0%, #3d99be 31%, #56317a 100%);
 }
 
-
 .open .layer:nth-child(1){
-  background-image: linear-gradient(45deg, #ee9ca7 0%, #ffdde1 100%);
+  background-image: linear-gradient(-225deg, #69EACB 0%, #EACCF8 48%, #6654F1 100%);
   z-index: 2;
 }
 
