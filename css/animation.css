@@ -109,3 +109,103 @@ div.slide-left li{
         width:100%;
     }
 }
+
+/*slide left to right*/
+div.slide-right {
+  width:100%;
+  overflow:hidden;
+}
+div.slide-right li {
+  animation: 5s slide-right;
+}
+
+@keyframes slide-right {
+  from {
+    margin-left: -100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.open{
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  pointer-events: none;
+  z-index:10000;
+}
+
+.open .layer{
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height: 100%;
+  transform-origin: top;
+  animation: open 1s ease-in-out forwards;
+}
+
+
+.open .layer:nth-child(1){
+  background-image: linear-gradient(45deg, #ee9ca7 0%, #ffdde1 100%);
+  z-index: 2;
+}
+
+.open .layer:nth-child(2){
+  background-image: linear-gradient(to right, #3ab5b0 0%, #3d99be 31%, #56317a 100%);
+  animation-delay: 1s;
+  z-index: 1;
+}
+
+@keyframes open
+{
+  0%
+  { 
+    transform:scaleY(1);
+  }
+  100%
+  {
+    transform: scaleY(0);
+  }
+}
+
+@keyframes revealText{
+  0%
+  {
+    transform:scaleX(1);
+  }
+  100%
+  {
+    transform:scaleX(0);
+  }
+}
+
+@keyframes fadeInBottom{
+
+  0%
+  { transform: translateY(50px); 
+    opacity: 0;
+  }
+  100%
+  { transform: translateY(5px); 
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInTop{
+
+  0%
+  { transform: translateY(-10px); 
+    opacity: 0;
+  }
+  100%
+  { transform: translateY(5px); 
+    opacity: 1;
+  }
+}
