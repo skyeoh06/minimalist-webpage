@@ -521,6 +521,90 @@
     background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
     
 }
+
+.b6Text{
+    position: absolute;
+    top:10vh;
+    left:15vw;
+    background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+
+.b6-1 h2,
+.b6-2 h2{
+    position: relative;
+    margin:0;
+    padding: 0;
+    display: inline;
+    transform-origin: left;
+    transform:scaleX(0);
+    background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.b6-1 h2:before,
+.b6-2 h2:before{
+    content:' ';
+    position: absolute;
+    top:0;
+    left:0;
+    background: #30c7ec;
+    width:100%;
+    height: 100%;
+    transform-origin: right;
+    animation:revealText 1s ease-in-out forwards;
+    
+    
+}
+.b6-1{
+    position: absolute;
+    top:17vh;
+    left:15vw;
+    color:#16d9e3;
+}
+.b6-2{
+    position: absolute;
+    top:37vh;
+    left:15vw;
+    width:35vw;
+    color:#16d9e3;
+}
+
+.b6-1 h2:before{
+    animation-delay: 2s;
+} 
+.b6-2 h2:before{
+    animation-delay: 3s;
+}
+.b6-1 li
+{
+    opacity:0;
+    animation: fadeIn 1s linear forwards;
+    animation-delay: 3s;
+
+}
+.b6-2 li
+{
+    opacity:0;
+    animation: fadeIn 1s linear forwards;
+    animation-delay: 4s;
+    
+}
+.img-b6
+{
+        opacity: 0;
+        position: absolute;
+        width: 30vw;
+        left: 55vw;
+        top: 50vh;
+        transform: translateY(-50%);
+        animation: fadeIn 1s linear forwards;
+        animation-delay: 5s;
+}
 /* 28 */
 #nutrition .box.c{
     background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -581,7 +665,7 @@
 
 .c1 h2:before{
     animation-delay: 2s;
-}
+} 
 .c2 h2:before{
     animation-delay: 3s;
 }
