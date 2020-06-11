@@ -54,11 +54,6 @@
     
 }
   
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-    .sidebar {padding-top: 15px;}
-    .sidebar a {font-size: 18px;}
-}
 
 #nutrition{
     width:100%;
@@ -79,38 +74,6 @@
 
 }
 
-@media(max-width:768px){
-    #nutrition{
-        grid-template:  "1fr 1fr " 50px
-                        "1fr 1fr " 50px
-                        "1fr 1fr " 50px
-                        "1fr 1fr " 50px
-                        "1fr 1fr " 50px
-                        "1fr 1fr " 50px
-                        "1fr 1fr " 50px
-                        "1fr 1fr " 50px
-                        "1fr 1fr " 50px
-                        "1fr 1fr " 50px
-                        "1fr 1fr " 50px
-                        "1fr 1fr " 50px
-                        "1fr 1fr " 50px
-                        "1fr 1fr " 50px
-                        "1fr 1fr " 50px
-                        "1fr 1fr " 50px
-                        "1fr 1fr " 50px
-                        "1fr 1fr " 50px
-                        "1fr 1fr " 50px
-                        "1fr 1fr " 50px
-                        "1fr 1fr " 50px
-                        "1fr 1fr " 50px
-                        "1fr 1fr " 50px
-                        "1fr 1fr " 50px
-                        
-                      ;
-    }
-
-
-}
 #nutrition a{
     color:black;
     
@@ -149,18 +112,6 @@
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
-@media(max-width:768px){
-    #aminoCont{
-        grid-template:  "1fr 1fr 1fr " 50px
-        "1fr 1fr 1fr " 50px
-        "1fr 1fr 1fr " 50px
-                    ;
-    }
-    .amino1 img{
-        width: 100%;
-        height: auto;
-    }
-}
 #aminoCont .box.amino1{
     grid-row: span 5;
     grid-column: span 3;
@@ -191,18 +142,7 @@
                     ;
 
 }
-@media(max-width:768px){
-    #biotinCont{
-        grid-template:  "1fr " 50px
-        "1fr  " 50px
-        "1fr  " 50px
-                    ;
-    }
-    .biotin1 img{
-        width: 100%;
-        height: auto;
-    }
-}
+
 
 .biotinText{
     background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
@@ -264,19 +204,7 @@
                     ;
     background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
 }
-@media(max-width:768px){
-    #cholineCont{
-        grid-template:  "1fr " 50px
-        "1fr  " 50px
-        "1fr  " 50px
-                    ;
-        background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
-    }
-    .choline3 img{
-        width: 100%;
-        height: auto;
-    }
-}
+
 
 #cholineCont .box.choline2{
     grid-column: span 2;
@@ -598,6 +526,90 @@
     background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     grid-row: span 2;
 }
+
+.cText{
+    position: absolute;
+    top:10vh;
+    left:15vw;
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+
+.c1 h2,
+.c2 h2{
+    position: relative;
+    margin:0;
+    padding: 0;
+    display: inline;
+    transform-origin: left;
+    transform:scaleX(0);
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.c1 h2:before,
+.c2 h2:before{
+    content:' ';
+    position: absolute;
+    top:0;
+    left:0;
+    background: #667eea;
+    width:100%;
+    height: 100%;
+    transform-origin: right;
+    animation:revealText 1s ease-in-out forwards;
+    
+    
+}
+.c1{
+    position: absolute;
+    top:17vh;
+    left:15vw;
+    color:#764ba2
+}
+.c2{
+    position: absolute;
+    top:37vh;
+    left:15vw;
+    width:35vw;
+    color:#764ba2;
+}
+
+.c1 h2:before{
+    animation-delay: 2s;
+}
+.c2 h2:before{
+    animation-delay: 3s;
+}
+.c1 li
+{
+    opacity:0;
+    animation: fadeIn 1s linear forwards;
+    animation-delay: 3s;
+
+}
+.c2 li
+{
+    opacity:0;
+    animation: fadeIn 1s linear forwards;
+    animation-delay: 4s;
+    
+}
+.img-c
+{
+        opacity: 0;
+        position: absolute;
+        width: 30vw;
+        left: 55vw;
+        top: 50vh;
+        transform: translateY(-50%);
+        animation: fadeIn 1s linear forwards;
+        animation-delay: 5s;
+}
 /* 29 */
 #nutrition .box.d{
     background-image: linear-gradient(45deg, #874da2 0%, #c43a30 100%);
@@ -631,11 +643,246 @@
 #nutrition .box.e{
     background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
 }
+
+#eCon{
+    position: absolute;
+    width:100%;
+    height:100%;
+    background: #fff;
+    display:grid;
+    justify-content: start;
+    align-items: flex-start;
+    color:#66a6ff;
+}
+
+.eText{
+    position: absolute;
+    top:10vh;
+    left:15vw;
+    transform:translateY(-50%) ;
+    max-width: 700px;
+    color:#89f7fe;
+    background-color: #66a6ff;
+    
+}
+
+.eText h1{
+    position: relative;
+    margin:0;
+    padding: 0;
+    display: inline;
+    transform-origin: left;
+    transform:scaleX(0);
+    
+
+}
+
+.eText h1:before{
+    content:' ';
+    position: absolute;
+    top:0;
+    left:0;
+    background: #66a6ff;
+    width:100%;
+    height: 100%;
+    transform-origin: right;
+    animation:revealText 1s ease-in-out forwards;
+    animation-delay: 2s;
+}
+
+.e1 h2,
+.e2 h2{
+    position: relative;
+    margin:0;
+    padding: 0;
+    display: inline;
+    transform-origin: left;
+    transform:scaleX(0);
+    color:#89f7fe;
+    background-color: #66a6ff;
+
+}
+
+.e1 h2:before,
+.e2 h2:before{
+    content:' ';
+    position: absolute;
+    top:0;
+    left:0;
+    background: #66a6ff;
+    width:100%;
+    height: 100%;
+    transform-origin: right;
+    animation:revealText 1s ease-in-out forwards;
+    
+    
+}
+.e1 h2:before{
+    animation-delay: 3s;
+}
+.e2 h2:before{
+    animation-delay: 4s;
+}
+.e1{
+    position: absolute;
+    top:17vh;
+    left:15vw;
+}
+.e2{
+    position: absolute;
+    top:37vh;
+    left:15vw;
+    width:35vw;
+}
+.e1 li
+{
+    opacity:0;
+    animation: fadeInBottom 1s linear forwards;
+    animation-delay: 5s;
+
+}
+.e2 li
+{   
+    opacity:0;
+    animation: fadeInTop 1s linear forwards;
+    animation-delay: 6s;
+
+}
+.img-e
+{
+    opacity:0;
+    position:absolute;
+    width:35vw;
+    left:55vw;
+    top:35vh;
+    transform: translateY(-50%);
+    animation: fadeIn 1s linear forwards;
+    animation-delay: 7s;
+    border:outset 2px #66a6ff;
+}
 /* 31 */
 #nutrition .box.k{
     background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
+}
+
+#kCon{
+    position: absolute;
+    width:100%;
+    height:100%;
+    background: #fff;
+    display:grid;
+    justify-content: start;
+    align-items: flex-start;
+    color:#fddb92;
+}
+
+.kText{
+    position: absolute;
+    top:10vh;
+    left:15vw;
+    transform:translateY(-50%) ;
+    max-width: 700px;
+    color:#d1fdff;
+    background-color: #fddb92;
+    
+}
+
+.kText h1{
+    position: relative;
+    margin:0;
+    padding: 0;
+    display: inline;
+    transform-origin: left;
+    transform:scaleX(0);
+    
+
+}
+
+.kText h1:before{
+    content:' ';
+    position: absolute;
+    top:0;
+    left:0;
+    background: #d1fdff;
+    width:100%;
+    height: 100%;
+    transform-origin: right;
+    animation:revealText 1s ease-in-out forwards;
+    animation-delay: 2s;
+}
+
+
+.k1 h2,
+.k2 h2{
+    position: relative;
+    margin:0;
+    padding: 0;
+    display: inline;
+    transform-origin: left;
+    transform:scaleX(0);
+    color:#d1fdff;
+    background-color: #fddb92;
+
+}
+
+.k1 h2:before,
+.k2 h2:before{
+    content:' ';
+    position: absolute;
+    top:0;
+    left:0;
+    background: #d1fdff;
+    width:100%;
+    height: 100%;
+    transform-origin: right;
+    animation:revealText 1s ease-in-out forwards;
+    
+    
+}
+.k1 h2:before{
+    animation-delay: 3s;
+}
+.k2 h2:before{
+    animation-delay: 4s;
+}
+.k1{
+    position: absolute;
+    top:17vh;
+    left:15vw;
+}
+.k2{
+    position: absolute;
+    top:37vh;
+    left:15vw;
+    width:45vw;
+}
+.k1 li
+{
+    opacity:0;
+    animation: fadeIn 1s linear forwards;
+    animation-delay: 5s;
+
+}
+.k2 ul{
+    opacity:0;
+    display: inline-block;
+    animation: fadeInBottom 0.5s linear forwards;
+    animation-delay: 5.5s;
+    
+}
+.img-e,
+.kale{
+    opacity:0;
+    position:absolute;
+    right:10vw;
+    top:35vh;
+    transform: translateY(-50%);
+    animation: fadeIn 1s linear forwards;
+    animation-delay: 6s;
+    border:outset 2px #d1fdff;
 }
 /* 32 */
 #nutrition .box.zinc{
     background-image: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%);
 }
+
