@@ -569,7 +569,7 @@
     position: absolute;
     top:17vh;
     left:15vw;
-    color:#764ba2
+    color:#764ba2;
 }
 .c2{
     position: absolute;
@@ -886,3 +886,87 @@
     background-image: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%);
 }
 
+
+.zincText{
+    position: absolute;
+    top:10vh;
+    left:15vw;
+    background-image: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+
+.zinc1 h2,
+.zinc2 h2{
+    position: relative;
+    margin:0;
+    padding: 0;
+    display: inline;
+    transform-origin: left;
+    transform:scaleX(0);
+    background-image: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.zinc1 h2:before,
+.zinc2 h2:before{
+    content:' ';
+    position: absolute;
+    top:0;
+    left:0;
+    background: #b1f4cf;
+    width:100%;
+    height: 100%;
+    transform-origin: right;
+    animation:revealText 1s ease-in-out forwards;
+    
+    
+}
+.zinc1{
+    position: absolute;
+    top:17vh;
+    left:15vw;
+    color:#9890e3;
+}
+.zinc2{
+    position: absolute;
+    top:37vh;
+    left:15vw;
+    width:35vw;
+    color:#9890e3;
+}
+
+.zinc1 h2:before{
+    animation-delay: 2s;
+}
+.zinc2 h2:before{
+    animation-delay: 3s;
+}
+.zinc1 li
+{
+    opacity:0;
+    animation: fadeIn 1s linear forwards;
+    animation-delay: 3s;
+
+}
+.zinc2 li
+{
+    opacity:0;
+    animation: fadeIn 1s linear forwards;
+    animation-delay: 4s;
+    
+}
+.img-zinc
+{
+        opacity: 0;
+        position: absolute;
+        width: 30vw;
+        left: 55vw;
+        top: 50vh;
+        transform: translateY(-50%);
+        animation: fadeIn 1s linear forwards;
+        animation-delay: 5s;
+}
