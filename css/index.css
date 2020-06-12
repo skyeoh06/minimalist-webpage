@@ -487,7 +487,120 @@
     background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
     grid-row: span 2;
 }
+#omegaCon{
+    position: absolute;
+    width:100%;
+    height:100%;
+    display:grid;
+    justify-content: start;
+    align-items: flex-start;
+    color:#8ec5fc;
+    font-family: 'Pompiere', cursive;
+    font-weight: 900;
+}
+.omegaText{
+    position: absolute;
+    top:5vh;
+    left:15vw;
+    transform:translateY(-50%) ;
+    max-width: 700px;
+}
+.omegaText h1{
+    position: relative;
+    margin:0;
+    padding: 0;
+    display: inline;
+    transform-origin: left;
+    transform:scaleX(0);
+    background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.omegaText h1:before{
+    content:' ';
+    position: absolute;
+    top:0;
+    left:0;
+    background: #8ec5fc;
+    width:100%;
+    height: 100%;
+    transform-origin: right;
+    animation:revealText 1s ease-in-out forwards;
+    animation-delay: 2s;
+}
 
+.omega1 h2,
+.omega2 h2{
+    position: relative;
+    margin:0;
+    padding: 0;
+    display: inline;
+    transform-origin: left;
+    transform:scaleX(0);
+    background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+
+}
+
+.omega1 h2:before,
+.omega2 h2:before{
+    content:' ';
+    position: absolute;
+    top:0;
+    left:0;
+    background: #8ec5fc;
+    width:100%;
+    height: 100%;
+    transform-origin: right;
+    animation:revealText 1s ease-in-out forwards;
+}
+.omega1 h2:before{
+    animation-delay: 3s;
+}
+.omega2 h2:before{
+    animation-delay: 4s;
+}
+.omega1{
+    position: absolute;
+    top:10vh;
+    left:15vw;
+    font-size: 25px;
+}
+.omega2{
+    position: absolute;
+    top:40vh;
+    left:15vw;
+    width:35vw;
+    font-size: 23px;
+    
+}
+.omega1 li
+{
+    opacity:0;
+    animation: fadeIn 1s linear forwards;
+    animation-delay: 5s;
+
+}
+.omega2 li
+{
+    opacity:0;
+    animation: fadeIn 1s linear forwards;
+    animation-delay: 5s;
+
+}
+.img-omega{
+    opacity:0;
+    position:absolute;
+    left:55vw;
+    top:35vh;
+    width:40%;
+    transform: translateY(-50%);
+    animation: fadeIn 1s linear forwards;
+    animation-delay: 6s;
+    border: 2px solid #e0c3fc;
+}
 /* 17 */
 #nutrition .box.pantothenic{
     background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
