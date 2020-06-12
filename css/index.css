@@ -105,12 +105,14 @@
                     "1fr 1fr 1fr 1fr 1fr 1fr" 20vh 
                     "1fr 1fr 1fr 1fr 1fr 1fr" 20vh
                     ;
+    
 
 }
 .aminoText{
     background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
 	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Concert One', cursive;
 }
 #aminoCont .box.amino1{
     grid-row: span 5;
@@ -147,7 +149,8 @@
 .biotinText{
     background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
 	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Combo', cursive;
 }
 
 #biotinCont .box.biotin1{
@@ -169,6 +172,7 @@
 	-webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-shadow: 2px 2px #FF0000;
+    font-family: 'Special Elite', cursive;
     
 }
   
@@ -219,6 +223,7 @@
 
 .cholineText{
     color:#6B8E23;
+    font-family: 'Poiret One', cursive;
 }
 /* 5 */
 #nutrition .box.chromium{
@@ -229,6 +234,7 @@
 	-webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-style: oblique;
+    font-family: 'Lalezar', cursive;
 }
 
 
@@ -242,6 +248,7 @@
     top:43vh;
     left:16vw;
     color:white;
+    
 }
 
 .chromium2{
@@ -249,6 +256,7 @@
     top:53vh;
     left:16vw;
     color:white;
+    
 }
 /* 6 */
 #nutrition .box.copper{
@@ -261,23 +269,23 @@
     border-radius: 50%;
 }
 .copperText{
-    
+    font-family: 'Comfortaa', cursive;
     color:#3d2611;
 }
 .copper1{
     position: absolute;
     background-image: linear-gradient(to top, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
     -webkit-background-clip: border-box;
-    top:45vh;
+    top:15vh;
     left:13vw;
     border-radius: 3%;
 }
 
 .copper2{
     position: absolute;
-    top:23vh;
-    left:30vw;
-    width:50vw;
+    top:15vh;
+    left:53vw;
+    width:45vw;
     background-image: linear-gradient(to top, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
     -webkit-background-clip: border-box;
     border-radius: 3%;
@@ -292,6 +300,7 @@
     background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
     -webkit-background-clip: border-box;
     color:#6588F6;
+    font-family: 'Baloo Thambi 2', cursive;
 }
 .fiber1{
     position: absolute;
@@ -318,6 +327,7 @@
 	-webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-style:inherit;
+    font-family: 'Combo', cursive;
 }
 
 #flavonoidsCont img{
@@ -330,6 +340,7 @@
     position: absolute;
     top:15vh;
     color:#ad729d;
+    font-family: 'Combo', cursive;
 }
 .flavonoids2{
     position: absolute;
@@ -337,6 +348,7 @@
     left:60vw;
     right:8vw;
     color:#7b8fb0;
+    font-family: 'Combo', cursive;
 }
 /* 9 */
 #nutrition .box.folate{
@@ -356,6 +368,7 @@
     left:15vw;
     background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);
     -webkit-background-clip: border-box;
+    font-family: 'Baloo 2', cursive;
 }
 
 .folate2{
@@ -365,12 +378,14 @@
     left:15vw;
     background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);
     -webkit-background-clip: border-box;
+    font-family: 'Baloo 2', cursive;
 }
 
 .folateText{
     background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);
     -webkit-background-clip: border-box;
     color:#718f78;
+    font-family: 'Baloo 2', cursive;
 }
 /* 10 */
 #nutrition .box.iodine{
@@ -386,6 +401,7 @@
     background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);
     -webkit-background-clip: border-box;
     color:#BC8F8F;
+    font-family: 'Yeseva One', cursive;
 }
 
 .iodine2{
@@ -393,6 +409,7 @@
     top:35vh;
     left:53vw;
     color:#1E90FF;
+    font-family: 'Yeseva One', cursive;
 }
 
 .iodine1{
@@ -400,6 +417,7 @@
     top:20vh;
     left:53vw;
     color:#1E90FF;
+    font-family: 'Yeseva One', cursive;
     
 }
 /* 11 */
