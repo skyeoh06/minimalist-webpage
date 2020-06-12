@@ -463,24 +463,472 @@
 
 /* 12 */
 #nutrition .box.lutein{
-    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    background-image: linear-gradient(to top, #e14fad 0%, #f9d423 100%);
     grid-column: span 2;
+}
+#luteinCon{
+    position: absolute;
+    width:100%;
+    height:100%;
+    display:grid;
+    justify-content: start;
+    align-items: flex-start;
+    color:#f9d423;
+    font-family: 'Sniglet', cursive;
+    
+}
+.luteinText{
+    position: absolute;
+    top:5vh;
+    left:15vw;
+    transform:translateY(-50%) ;
+    max-width: 700px;
+}
+.luteinText h1{
+    position: relative;
+    margin:0;
+    padding: 0;
+    display: inline;
+    transform-origin: left;
+    transform:scaleX(0);
+    background-image: linear-gradient(to top, #e14fad 0%, #f9d423 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+}
+.luteinText h1:before{
+    content:' ';
+    position: absolute;
+    top:0;
+    left:0;
+    background: #e14fad;
+    width:100%;
+    height: 100%;
+    transform-origin: right;
+    animation:revealText 1s ease-in-out forwards;
+    animation-delay: 2s;
+}
+.lutein1 h2,
+.lutein2 h2{
+    position: relative;
+    margin:0;
+    padding: 0;
+    display: inline;
+    transform-origin: left;
+    transform:scaleX(0);
+    background-image: linear-gradient(to top, #e14fad 0%, #f9d423 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+
+}
+.lutein1 h2:before,
+.lutein2 h2:before{
+    content:' ';
+    position: absolute;
+    top:0;
+    left:0;
+    background: #e14fad;
+    width:100%;
+    height: 100%;
+    transform-origin: right;
+    animation:revealText 1s ease-in-out forwards;
+}
+.lutein1 h2:before{
+    animation-delay: 3s;
+}
+.lutein h2:before{
+    animation-delay: 4s;
+}
+.lutein1{
+    position: absolute;
+    top:10vh;
+    left:15vw;
+    width:35vw;
+}
+.lutein2{
+    position: absolute;
+    top:40vh;
+    left:15vw;
+    width:35vw;
+    
+}
+.lutein1 li
+{
+    opacity:0;
+    animation: fadeIn 1s linear forwards;
+    animation-delay: 5s;
+
+}
+.lutein2 li
+{
+    opacity:0;
+    animation: fadeIn 1s linear forwards;
+    animation-delay: 5s;
+
+}
+.img-lutein{
+    opacity:0;
+    position:absolute;
+    left:55vw;
+    top:35vh;
+    width:30%;
+    height: 50%;
+    transform: translateY(-50%);
+    animation: fadeIn 1s linear forwards;
+    animation-delay: 6s;
+    border: 2px solid #f9d423;
 }
 /* 13 */
 #nutrition .box.magnesium{
-    background-image: linear-gradient(to top, #ebc0fd 0%, #d9ded8 100%);
+    background-image: linear-gradient(to top, #e14fad 0%, #f9d423 100%);
     grid-column: span 2;
+}
+#magnesiumCon{
+    position: absolute;
+    width:100%;
+    height:100%;
+    display:grid;
+    justify-content: start;
+    align-items: flex-start;
+    color:#e14fad;
+    font-family: 'Unkempt', cursive;
+    
+}
+.magnesiumText{
+    position: absolute;
+    top:5vh;
+    left:15vw;
+    transform:translateY(-50%) ;
+    max-width: 700px;
+}
+.magnesiumText h1{
+    position: relative;
+    margin:0;
+    padding: 0;
+    display: inline;
+    transform-origin: left;
+    transform:scaleX(0);
+    background-image: linear-gradient(to top, #e14fad 0%, #f9d423 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+}
+.magnesiumText h1:before{
+    content:' ';
+    position: absolute;
+    top:0;
+    left:0;
+    background: #f9d423;
+    width:100%;
+    height: 100%;
+    transform-origin: right;
+    animation:revealText 1s ease-in-out forwards;
+    animation-delay: 2s;
+}
+.magnesium1 h2,
+.magnesium2 h2{
+    position: relative;
+    margin:0;
+    padding: 0;
+    display: inline;
+    transform-origin: left;
+    transform:scaleX(0);
+    background-image: linear-gradient(to top, #e14fad 0%, #f9d423 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+
+}
+
+.magnesium1 h2:before,
+.magnesium2 h2:before{
+    content:' ';
+    position: absolute;
+    top:0;
+    left:0;
+    background: #f9d423;
+    width:100%;
+    height: 100%;
+    transform-origin: right;
+    animation:revealText 1s ease-in-out forwards;
+}
+.magnesium1 h2:before{
+    animation-delay: 3s;
+}
+.magnesium2 h2:before{
+    animation-delay: 4s;
+}
+.magnesium1{
+    position: absolute;
+    top:10vh;
+    left:15vw;
+    width:35vw;
+}
+.magnesium2{
+    position: absolute;
+    top:40vh;
+    left:15vw;
+    width:35vw;
+    
+}
+.magnesium1 li
+{
+    opacity:0;
+    animation: fadeIn 1s linear forwards;
+    animation-delay: 5s;
+
+}
+.magnesium2 li
+{
+    opacity:0;
+    animation: fadeIn 1s linear forwards;
+    animation-delay: 5s;
+
+}
+.img-magnesium{
+    opacity:0;
+    position:absolute;
+    left:55vw;
+    top:35vh;
+    width:40%;
+    transform: translateY(-50%);
+    animation: fadeIn 1s linear forwards;
+    animation-delay: 6s;
+    border: 2px solid #e14fad;
 }
 /* 14 */
 #nutrition .box.manganese{
     background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
     grid-row: span 2;
 }
+#manganeseCon{
+    position: absolute;
+    width:100%;
+    height:100%;
+    display:grid;
+    justify-content: start;
+    align-items: flex-start;
+    color:#a6c0fe;
+    font-family: 'Unkempt', cursive;
+}
+.manganeseText{
+    position: absolute;
+    top:5vh;
+    left:15vw;
+    transform:translateY(-50%) ;
+    max-width: 700px;
+}
+.manganeseText h1{
+    position: relative;
+    margin:0;
+    padding: 0;
+    display: inline;
+    transform-origin: left;
+    transform:scaleX(0);
+    background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.manganeseText h1:before{
+    content:' ';
+    position: absolute;
+    top:0;
+    left:0;
+    background: #f68084;
+    width:100%;
+    height: 100%;
+    transform-origin: right;
+    animation:revealText 1s ease-in-out forwards;
+    animation-delay: 2s;
+}
+.manganese1 h2,
+.manganese2 h2{
+    position: relative;
+    margin:0;
+    padding: 0;
+    display: inline;
+    transform-origin: left;
+    transform:scaleX(0);
+    background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
 
+}
+
+.manganese1 h2:before,
+.manganese2 h2:before{
+    content:' ';
+    position: absolute;
+    top:0;
+    left:0;
+    background: #f68084;
+    width:100%;
+    height: 100%;
+    transform-origin: right;
+    animation:revealText 1s ease-in-out forwards;
+}
+.manganese1 h2:before{
+    animation-delay: 3s;
+}
+.manganese2 h2:before{
+    animation-delay: 4s;
+}
+.manganese1{
+    position: absolute;
+    top:10vh;
+    left:15vw;
+    width:35vw;
+}
+.manganese2{
+    position: absolute;
+    top:27vh;
+    left:15vw;
+    width:38vw;
+    
+}
+.manganese1 li
+{
+    opacity:0;
+    animation: fadeIn 1s linear forwards;
+    animation-delay: 5s;
+
+}
+.manganese2 li
+{
+    opacity:0;
+    animation: fadeIn 1s linear forwards;
+    animation-delay: 5s;
+
+}
+.img-manganese{
+    opacity:0;
+    position:absolute;
+    left:55vw;
+    top:35vh;
+    width:40%;
+    transform: translateY(-50%);
+    animation: fadeIn 1s linear forwards;
+    animation-delay: 6s;
+    border: 2px solid #a6c0fe;
+}
 /* 15 */
 #nutrition .box.molybdenum{
     background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
     
+}
+#molybdenumCon{
+    position: absolute;
+    width:100%;
+    height:100%;
+    display:grid;
+    justify-content: start;
+    align-items: flex-start;
+    color:#d57eeb;
+    font-family: 'Mirza', cursive;
+    font-weight: 900;
+}
+.molybdenumText{
+    position: absolute;
+    top:5vh;
+    left:15vw;
+    transform:translateY(-50%) ;
+    max-width: 700px;
+}
+.molybdenumText h1{
+    position: relative;
+    margin:0;
+    padding: 0;
+    display: inline;
+    transform-origin: left;
+    transform:scaleX(0);
+    background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.molybdenumText h1:before{
+    content:' ';
+    position: absolute;
+    top:0;
+    left:0;
+    background: #fccb90;
+    width:100%;
+    height: 100%;
+    transform-origin: right;
+    animation:revealText 1s ease-in-out forwards;
+    animation-delay: 2s;
+}
+.molybdenum1 h2,
+.molybdenum2 h2{
+    position: relative;
+    margin:0;
+    padding: 0;
+    display: inline;
+    transform-origin: left;
+    transform:scaleX(0);
+    background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+
+}
+
+.molybdenum1 h2:before,
+.molybdenum2 h2:before{
+    content:' ';
+    position: absolute;
+    top:0;
+    left:0;
+    background: #fccb90;
+    width:100%;
+    height: 100%;
+    transform-origin: right;
+    animation:revealText 1s ease-in-out forwards;
+}
+.molybdenum1 h2:before{
+    animation-delay: 3s;
+}
+.molybdenum2 h2:before{
+    animation-delay: 4s;
+}
+.molybdenum1{
+    position: absolute;
+    top:10vh;
+    left:15vw;
+    width:35vw;
+}
+.molybdenum2{
+    position: absolute;
+    top:40vh;
+    left:15vw;
+    width:35vw;
+    
+}
+.molybdenum1 li
+{
+    opacity:0;
+    animation: fadeIn 1s linear forwards;
+    animation-delay: 5s;
+
+}
+.molybdenum2 li
+{
+    opacity:0;
+    animation: fadeIn 1s linear forwards;
+    animation-delay: 5s;
+
+}
+.img-molybdenum{
+    opacity:0;
+    position:absolute;
+    left:55vw;
+    top:35vh;
+    width:40%;
+    transform: translateY(-50%);
+    animation: fadeIn 1s linear forwards;
+    animation-delay: 6s;
+    border: 2px solid #d57eeb;
 }
 /* 16 */
 #nutrition .box.omega{
