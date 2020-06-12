@@ -495,7 +495,97 @@
     background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
     grid-row: span 2;
 }
+#aCon{
+    font-family: 'Bellota Text', cursive;
 
+}
+.aText{
+    position: absolute;
+    top:10vh;
+    left:15vw;
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+    
+}
+.a1 h2,
+.a2 h2{
+    position: relative;
+    margin:0;
+    padding: 0;
+    display: inline;
+    transform-origin: left;
+    transform:scaleX(0);
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+
+}
+
+.a1 h2:before,
+.a2 h2:before{
+    content:' ';
+    position: absolute;
+    top:0;
+    left:0;
+    background: #30cfd0;
+    width:100%;
+    height: 100%;
+    transform-origin: right;
+    animation:revealText 1s ease-in-out forwards;
+}
+.a1{
+    position: absolute;
+    top:17vh;
+    left:15vw;
+    color:#1e8181;
+    
+}
+.a2{
+    position: absolute;
+    top:40vh;
+    left:15vw;
+    width:35vw;
+    color:#1e8181;
+    
+}
+
+.a1 h2:before{
+    animation-delay: 2s;
+} 
+.a2 h2:before{
+    animation-delay: 3s;
+}
+
+.a1 li
+{
+    opacity:0;
+    animation: fadeIn 1s linear forwards;
+    animation-delay: 3s;
+    
+
+}
+.a2 li
+{
+    opacity:0;
+    animation: fadeIn 1s linear forwards;
+    animation-delay: 4s;
+    
+}
+.img-a
+{
+        opacity: 0;
+        position: absolute;
+        width: 40vw;
+        left: 55vw;
+        top: 50vh;
+        transform: translateY(-50%);
+        animation: fadeIn 1s linear forwards;
+        animation-delay: 5s;
+        border-radius: 50%;
+}
 /* 23 */
 #nutrition .box.b1{
     background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
@@ -1197,7 +1287,8 @@
     display:grid;
     justify-content: start;
     align-items: flex-start;
-    color:#fddb92;
+    color:#8d7a51;
+    font-family: 'Special Elite', cursive;
 }
 
 .kText{
@@ -1206,8 +1297,7 @@
     left:15vw;
     transform:translateY(-50%) ;
     max-width: 700px;
-    color:#d1fdff;
-    background-color: #fddb92;
+    
     
 }
 
@@ -1218,8 +1308,9 @@
     display: inline;
     transform-origin: left;
     transform:scaleX(0);
-    
-
+    background-image: linear-gradient(to top, #fddb92 100%, #d1fdff 0%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .kText h1:before{
@@ -1244,8 +1335,9 @@
     display: inline;
     transform-origin: left;
     transform:scaleX(0);
-    color:#d1fdff;
-    background-color: #fddb92;
+    background-image: linear-gradient(to top, #fddb92 100%, #d1fdff 0%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 
 }
 
