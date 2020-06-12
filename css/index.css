@@ -497,6 +497,117 @@
     background-image: linear-gradient(to right, #e4afcb 0%, #b8cbb8 0%, #b8cbb8 0%, #e2c58b 30%, #c2ce9c 64%, #7edbdc 100%);
     grid-row: span 2;
 }
+#phosphorusCon{
+    position: absolute;
+    width:100%;
+    height:100%;
+    display:grid;
+    justify-content: start;
+    align-items: flex-start;
+    color:#e2c58b;
+    font-family: 'Stardos Stencil', cursive;
+}
+
+.phosphorusText{
+    position: absolute;
+    top:5vh;
+    left:15vw;
+    transform:translateY(-50%) ;
+    max-width: 700px;
+}
+.phosphorusText h1{
+    position: relative;
+    margin:0;
+    padding: 0;
+    display: inline;
+    transform-origin: left;
+    transform:scaleX(0);
+    background-image: linear-gradient(to right, #e4afcb 0%, #b8cbb8 0%, #b8cbb8 0%, #e2c58b 30%, #c2ce9c 64%, #7edbdc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.phosphorusText h1:before{
+    content:' ';
+    position: absolute;
+    top:0;
+    left:0;
+    background: #b8cbb8;
+    width:100%;
+    height: 100%;
+    transform-origin: right;
+    animation:revealText 1s ease-in-out forwards;
+    animation-delay: 2s;
+}
+
+.phosphorus1 h2,
+.phosphorus2 h2{
+    position: relative;
+    margin:0;
+    padding: 0;
+    display: inline;
+    transform-origin: left;
+    transform:scaleX(0);
+    background-image: linear-gradient(to right, #e4afcb 0%, #b8cbb8 0%, #b8cbb8 0%, #e2c58b 30%, #c2ce9c 64%, #7edbdc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.phosphorus1 h2:before,
+.phosphorus2 h2:before{
+    content:' ';
+    position: absolute;
+    top:0;
+    left:0;
+    background: #b8cbb8;
+    width:100%;
+    height: 100%;
+    transform-origin: right;
+    animation:revealText 1s ease-in-out forwards;
+}
+.phosphorus1 h2:before{
+    animation-delay: 3s;
+}
+.phosphorus2 h2:before{
+    animation-delay: 4s;
+}
+.phosphorus1{
+    position: absolute;
+    top:10vh;
+    left:15vw;
+}
+.phosphorus2{
+    position: absolute;
+    top:30vh;
+    left:15vw;
+    width:35vw;
+}
+.phosphorus1 li
+{
+    opacity:0;
+    animation: fadeIn 1s linear forwards;
+    animation-delay: 5s;
+
+}
+.phosphorus2 li
+{
+    opacity:0;
+    animation: fadeIn 1s linear forwards;
+    animation-delay: 5s;
+
+}
+.img-phosphorus{
+    opacity:0;
+    position:absolute;
+    left:55vw;
+    top:35vh;
+    width:25%;
+    transform: translateY(-50%);
+    animation: fadeIn 1s linear forwards;
+    animation-delay: 6s;
+    border: 2px solid #e2c58b;
+}
 /* 19 */
 #nutrition .box.potassium{
     background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
