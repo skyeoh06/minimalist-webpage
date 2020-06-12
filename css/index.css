@@ -501,9 +501,182 @@
     background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
     grid-column: span 2;
 }
+.b1Text{
+    position: absolute;
+    top:10vh;
+    left:15vw;
+    background-image: linear-gradient(to top, #a8edea 100%, #fed6e3 0%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Lobster Two', cursive;
+    
+}
+.b1-1 h2,
+.b1-2 h2{
+    position: relative;
+    margin:0;
+    padding: 0;
+    display: inline;
+    transform-origin: left;
+    transform:scaleX(0);
+    background-image: linear-gradient(to top, #a8edea 100%, #fed6e3 0%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Lobster Two', cursive;
+
+}
+
+.b1-1 h2:before,
+.b1-2 h2:before{
+    content:' ';
+    position: absolute;
+    top:0;
+    left:0;
+    background: #a8edea;
+    width:100%;
+    height: 100%;
+    transform-origin: right;
+    animation:revealText 1s ease-in-out forwards;
+}
+.b1-1{
+    position: absolute;
+    top:17vh;
+    left:15vw;
+    color:#38615f;
+    
+}
+.b1-2{
+    position: absolute;
+    top:35vh;
+    left:15vw;
+    width:35vw;
+    color:#38615f;
+    
+}
+
+.b1-1 h2:before{
+    animation-delay: 2s;
+} 
+.b1-2 h2:before{
+    animation-delay: 3s;
+}
+
+.b1-1 li
+{
+    opacity:0;
+    animation: fadeIn 1s linear forwards;
+    animation-delay: 3s;
+    
+
+}
+.b1-2 li
+{
+    opacity:0;
+    animation: fadeIn 1s linear forwards;
+    animation-delay: 4s;
+    
+}
+.img-b1
+{
+        opacity: 0;
+        position: absolute;
+        width: 40vw;
+        left: 55vw;
+        top: 50vh;
+        transform: translateY(-50%);
+        animation: fadeIn 1s linear forwards;
+        animation-delay: 5s;
+        border-radius: 50%;
+}
 /* 24 */
 #nutrition .box.b2{
     background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
+}
+
+.b2Text{
+    position: absolute;
+    top:10vh;
+    left:15vw;
+    background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Comfortaa', cursive;
+    
+}
+
+.b2-1 h2,
+.b2-2 h2{
+    position: relative;
+    margin:0;
+    padding: 0;
+    display: inline;
+    transform-origin: left;
+    transform:scaleX(0);
+    background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Comfortaa', cursive;
+
+}
+
+.b2-1 h2:before,
+.b2-2 h2:before{
+    content:' ';
+    position: absolute;
+    top:0;
+    left:0;
+    background: #5ee7df;
+    width:100%;
+    height: 100%;
+    transform-origin: right;
+    animation:revealText 1s ease-in-out forwards;
+}
+.b2-1{
+    position: absolute;
+    top:17vh;
+    left:15vw;
+    color:#8558a1;
+}
+.b2-2{
+    position: absolute;
+    top:35vh;
+    left:15vw;
+    width:35vw;
+    color:#8558a1;
+}
+
+.b2-1 h2:before{
+    animation-delay: 2s;
+} 
+.b2-2 h2:before{
+    animation-delay: 3s;
+}
+
+.b2-1 li
+{
+    opacity:0;
+    animation: fadeIn 1s linear forwards;
+    animation-delay: 3s;
+
+}
+.b2-2 li
+{
+    opacity:0;
+    animation: fadeIn 1s linear forwards;
+    animation-delay: 4s;
+    
+}
+.img-b2
+{
+        opacity: 0;
+        position: absolute;
+        width: 40vw;
+        left: 55vw;
+        top: 50vh;
+        transform: translateY(-50%);
+        animation: fadeIn 1s linear forwards;
+        animation-delay: 5s;
+        border-radius: 50%;
 }
 /* 25 */
 #nutrition .box.b12{
@@ -511,11 +684,97 @@
     grid-row: span 2;
 }
 
+.b12Text{
+    position: absolute;
+    top:10vh;
+    left:15vw;
+    background-image: linear-gradient(to top, #d299c2 100%, #fef9d7 0%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 1px 1px #d299c2;
+    font-family: 'Abril Fatface', cursive;
+    
+}
+
+.b12-1 h2,
+.b12-2 h2{
+    position: relative;
+    margin:0;
+    padding: 0;
+    display: inline;
+    transform-origin: left;
+    transform:scaleX(0);
+    background-image: linear-gradient(to top, #d299c2 100%, #fef9d7 0%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Abril Fatface', cursive;
+
+}
+
+.b12-1 h2:before,
+.b12-2 h2:before{
+    content:' ';
+    position: absolute;
+    top:0;
+    left:0;
+    background: #635d3b;
+    width:100%;
+    height: 100%;
+    transform-origin: right;
+    animation:revealText 1s ease-in-out forwards;
+}
+.b12-1{
+    position: absolute;
+    top:17vh;
+    left:15vw;
+    color:#635d3b;
+}
+.b12-2{
+    position: absolute;
+    top:46vh;
+    left:15vw;
+    width:35vw;
+    color:#635d3b;
+}
+
+.b12-1 h2:before{
+    animation-delay: 2s;
+} 
+.b12-2 h2:before{
+    animation-delay: 3s;
+}
+.b12-1 li
+{
+    opacity:0;
+    animation: fadeIn 1s linear forwards;
+    animation-delay: 3s;
+
+}
+.b12-2 li
+{
+    opacity:0;
+    animation: fadeIn 1s linear forwards;
+    animation-delay: 4s;
+    
+}
+.img-b12
+{
+        opacity: 0;
+        position: absolute;
+        width: 30vw;
+        left: 55vw;
+        top: 50vh;
+        transform: translateY(-50%);
+        animation: fadeIn 1s linear forwards;
+        animation-delay: 5s;
+}
 /* 26 */
 #nutrition .box.b3{
     background-image: linear-gradient(60deg, #abecd6 0%, #fbed96 100%);
     grid-row: span 2;
 }
+
+
 
 .b3Text{
     position: absolute;
