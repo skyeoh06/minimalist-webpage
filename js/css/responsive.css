@@ -1,0 +1,147 @@
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+}
+
+/*amino page*/
+@media(max-width:768px){
+    #aminoCont{
+        grid-template:  "1fr 1fr 1fr " 50px
+        "1fr 1fr 1fr " 50px
+        "1fr 1fr 1fr " 50px
+                    ;
+    }
+    .amino1 img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+/*biotin page*/
+@media(max-width:768px){
+    #biotinCont{
+        grid-template:  "1fr " 50px
+        "1fr  " 50px
+        "1fr  " 50px
+                    ;
+    }
+    .biotin1 img{
+        width: 100%;
+        height: auto;
+    }
+}
+/*choline page*/
+@media(max-width:768px){
+    #cholineCont{
+        grid-template:  "1fr " 50px
+        "1fr  " 50px
+        "1fr  " 50px
+                    ;
+        background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+    }
+    .choline3 img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width:1280px){
+    section
+    {
+      height:auto!important;
+      display: initial;
+      padding:100px;
+      box-sizing: border-box;
+    
+    }
+    .k1{
+        position: absolute;
+        top: 57vh;
+        left: 15vw;
+    }
+    .k2 {
+        position: absolute;
+        top: 70vh;
+        left: 15vw;
+        width: auto!important;
+    }
+    .img-e, .kale {
+        opacity: 0;
+        position: absolute;
+        left: 15vw;
+        top: 35vh;
+        transform: translateY(-50%);
+        animation: fadeIn 1s linear forwards;
+        animation-delay: 6s;
+        border: outset 2px #d1fdff;
+    }
+    .e1 {
+        top: 47vh;
+        position: absolute;
+        top: 57;
+        left: 15vw;
+    }
+    .e2 {
+        position: absolute;
+        top: 66vh;
+        left: 15vw;
+        width: auto;
+    }
+    .img-e{
+        opacity: 0;
+        position: absolute;
+        left: 15vw;
+        top: 28vh;
+        transform: translateY(-50%);
+        animation: fadeIn 1s linear forwards;
+        animation-delay: 6s;
+        border: outset 2px #d1fdff;
+    }  
+    .calcium1 {
+        position: absolute;
+        top: 18vh;
+        left: 10vw;
+    } 
+    .calcium2 {
+        position: absolute;
+        top: 38vh;
+        left: 10vw;
+        width: auto;
+    }
+}
+
+
+/*nutrition page*/
+@media(max-width:768px){
+    #nutrition{
+        grid-template:  "1fr 1fr " 50px
+                        "1fr 1fr " 50px
+                        "1fr 1fr " 50px
+                        "1fr 1fr " 50px
+                        "1fr 1fr " 50px
+                        "1fr 1fr " 50px
+                        "1fr 1fr " 50px
+                        "1fr 1fr " 50px
+                        "1fr 1fr " 50px
+                        "1fr 1fr " 50px
+                        "1fr 1fr " 50px
+                        "1fr 1fr " 50px
+                        "1fr 1fr " 50px
+                        "1fr 1fr " 50px
+                        "1fr 1fr " 50px
+                        "1fr 1fr " 50px
+                        "1fr 1fr " 50px
+                        "1fr 1fr " 50px
+                        "1fr 1fr " 50px
+                        "1fr 1fr " 50px
+                        "1fr 1fr " 50px
+                        "1fr 1fr " 50px
+                        "1fr 1fr " 50px
+                        "1fr 1fr " 50px
+                        
+                      ;
+    }
+
+
+}
