@@ -492,6 +492,116 @@
 #nutrition .box.pantothenic{
     background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
 }
+#pantothenicCon{
+    position: absolute;
+    width:100%;
+    height:100%;
+    display:grid;
+    justify-content: start;
+    align-items: flex-start;
+    color:#f093fb;
+    font-family: 'Stardos Stencil', cursive;
+}
+.pantothenicText{
+    position: absolute;
+    top:5vh;
+    left:15vw;
+    transform:translateY(-50%) ;
+    max-width: 700px;
+}
+.pantothenicText h1{
+    position: relative;
+    margin:0;
+    padding: 0;
+    display: inline;
+    transform-origin: left;
+    transform:scaleX(0);
+    background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.pantothenicText h1:before{
+    content:' ';
+    position: absolute;
+    top:0;
+    left:0;
+    background: #f5576c;
+    width:100%;
+    height: 100%;
+    transform-origin: right;
+    animation:revealText 1s ease-in-out forwards;
+    animation-delay: 2s;
+}
+
+.pantothenic1 h2,
+.pantothenic2 h2{
+    position: relative;
+    margin:0;
+    padding: 0;
+    display: inline;
+    transform-origin: left;
+    transform:scaleX(0);
+    background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.pantothenic1 h2:before,
+.pantothenic2 h2:before{
+    content:' ';
+    position: absolute;
+    top:0;
+    left:0;
+    background: #f5576c;
+    width:100%;
+    height: 100%;
+    transform-origin: right;
+    animation:revealText 1s ease-in-out forwards;
+}
+.pantothenic1 h2:before{
+    animation-delay: 3s;
+}
+.pantothenic2 h2:before{
+    animation-delay: 4s;
+}
+.pantothenic1{
+    position: absolute;
+    top:10vh;
+    left:15vw;
+}
+.pantothenic2{
+    position: absolute;
+    top:30vh;
+    left:15vw;
+    width:35vw;
+}
+.pantothenic1 li
+{
+    opacity:0;
+    animation: fadeIn 1s linear forwards;
+    animation-delay: 5s;
+
+}
+.pantothenic2 li
+{
+    opacity:0;
+    animation: fadeIn 1s linear forwards;
+    animation-delay: 5s;
+
+}
+.img-pantothenic{
+    opacity:0;
+    position:absolute;
+    left:55vw;
+    top:35vh;
+    width:40%;
+    transform: translateY(-50%);
+    animation: fadeIn 1s linear forwards;
+    animation-delay: 6s;
+    border: 2px solid #f093fb;
+}
 /* 18 */
 #nutrition .box.phosphorus{
     background-image: linear-gradient(to right, #e4afcb 0%, #b8cbb8 0%, #b8cbb8 0%, #e2c58b 30%, #c2ce9c 64%, #7edbdc 100%);
