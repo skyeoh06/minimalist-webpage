@@ -1,24 +1,4 @@
-/*slide up css*/
-div.slide-up{
-    height:200px;
-    overflow: hidden;
-}
 
-div.slide-up li{
-    animation:5s slide-up;
-    margin-top: 0%;
-}
-
-@keyframes slide-up{
-    from{
-        margin-top: 100%;
-        height:100%;
-    }
-    to{
-        margin-top:0%;
-        height:10%;
-    }
-}
 /*transition in css*/
 .container{
     animation:transitionIn 1s
