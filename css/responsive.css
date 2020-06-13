@@ -19,31 +19,117 @@
 }
 
 /*biotin page*/
-@media(max-width:768px){
-    #biotinCont{
-        grid-template:  "1fr " 50px
-        "1fr  " 50px
-        "1fr  " 50px
-                    ;
-    }
+@media(max-width:1000px){
+   
     .biotin1 img{
         width: 100%;
         height: auto;
     }
+   .biotin1{
+        position: absolute;
+        top: 58vh;
+        left: 15vw;
+    }
+    .biotin2{
+        position: absolute;
+        top: 70vh;
+        left: 15vw;
+        width: 70vw;
+    }
+}    
+    @media(max-width:995px){
+        #copperCont{
+            width:100%;
+            display:grid;
+            grid-auto-flow: dense;
+            grid-template:  "1fr" 150px
+                            "1fr" 550px
+                            "1fr" 50px
+                            ;
+        }
+        .copper3 img {
+            width: 60%;
+            height: auto;
+            
+        }
+        #copperCont .box.copper1{
+            grid-row: span 1;
+            
+        }
+        #copperCont .box.copper3{
+            grid-row: span 1;
+            
+        }
+        #copperCont .box.copper2{
+            grid-row: span 1;
+        }
+        @media(max-width:520px){
+            #copperCont {
+                width: 100%;
+                display: grid;
+                grid-auto-flow: dense;
+                grid-template:
+                    "1fr" 150px
+                    "1fr" 770px
+                    "1fr" 50px;
+            }
+            .copper3 img {
+                
+                width: 50%;
+                height: auto;
+                
+            }
+            #copperCont .box.copper1{
+                grid-row: span 1;
+                
+            }
+            #copperCont .box.copper3{
+                grid-row: span 1;
+                
+            }
+            #copperCont .box.copper2{
+                grid-row: span 1;
+            }
 }
 /*choline page*/
 @media(max-width:768px){
-    #cholineCont{
-        grid-template:  "1fr " 50px
-        "1fr  " 50px
-        "1fr  " 50px
-                    ;
-        background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
-    }
-    .choline3 img{
-        width: 100%;
-        height: auto;
-    }
+    
+        #cholineCont {
+            grid-template:
+                "1fr " 200px
+                "1fr " 250px
+                "1fr " 200px;
+            background-color: transparent;
+        }
+        
+        #cholineCont .box.choline1{
+            grid-column: span 1;
+            
+        }
+        #cholineCont .box.choline2{
+            grid-column: span 1;
+            width:95vw;
+            
+        }
+        #cholineCont .box.choline3{
+            grid-column: span 1;
+            
+        }
+        .chromium1{
+            position: absolute;
+            top: 16vh;
+            left: 16vw;
+            color: white;
+            
+        }
+        
+        .chromium2{
+            position: absolute;
+            top: 28vh;
+            left: 16vw;
+            color: white;
+            
+        }
 }
 
 @media (max-width:1280px){
@@ -142,6 +228,540 @@
                         
                       ;
     }
-
-
+}
+@media(max-width: 612px){
+    .lutein1{
+        position: absolute;
+        top:10vh;
+        left:15vw;
+        width:75vw;
+    }
+    .lutein2{
+        position: absolute;
+        top:40vh;
+        left:15vw;
+        width:60vw;
+       
+        
+    }
+    .magnesium1{
+        position: absolute;
+        top:10vh;
+        left:15vw;
+        width:75vw;
+    }
+    .magnesium2{
+        position: absolute;
+        top:65vh;
+        left:15vw;
+        width:75vw;
+       
+        
+    }
+    .img-magnesium{
+        opacity:0;
+        position:absolute;
+        left:15vw;
+        top:55vh;
+        width:50%;
+        transform: translateY(-50%);
+        animation: fadeIn 1s linear forwards;
+        animation-delay: 6s;
+        border: 2px solid #e14fad;
+        }
+    .manganese1{
+            position: absolute;
+            top:10vh;
+            left:15vw;
+            width:75vw;
+        }
+    .manganese2{
+            position: absolute;
+            top: 40vh;
+            left: 10vw;
+            width: 75vw;
+            
+        }
+    .img-manganese{
+            opacity:0;
+            position:absolute;
+            left: 18vw;
+            top: 35vh;
+            width: 40%;
+            transform: translateY(-50%);
+            animation: fadeIn 1s linear forwards;
+            animation-delay: 6s;
+            border: 2px solid #a6c0fe;
+    }
+    .molybdenum1{
+            position: absolute;
+            top:10vh;
+            left:10vw;
+            width:75vw;
+    }
+    .molybdenum2{
+            position: absolute;
+            top:50vh;
+            left:10vw;
+            width:75vw;
+            
+    }
+    .img-molybdenum{
+            opacity:0;
+            position:absolute;
+            left:18vw;
+            top:40vh;
+            width:40%;
+            transform: translateY(-50%);
+            animation: fadeIn 1s linear forwards;
+            animation-delay: 6s;
+            border: 2px solid #d57eeb;
+    }    
+    .omega1{
+            position: absolute;
+            top:10vh;
+            left:10vw;
+            width:75vw;
+    }
+    .omega2{
+            position: absolute;
+            top:65vh;
+            left:10vw;
+            width:75vw;
+            
+            
+    }    
+    .img-omega{
+            opacity:0;
+            position:absolute;
+            left:18vw;
+            top:55vh;
+            width:40%;
+            transform: translateY(-50%);
+            animation: fadeIn 1s linear forwards;
+            animation-delay: 6s;
+            border: 2px solid #e0c3fc;
+    }
+    .pantothenic1{
+            position: absolute;
+            top:10vh;
+            left:10vw;
+    }
+    .pantothenic2{
+            position: absolute;
+            top:35vh;
+            left:10vw;
+            width:75vw;
+    }
+    .img-pantothenic{
+            opacity:0;
+            position:absolute;
+            left:18vw;
+            top:28vh;
+            width:40%;
+            transform: translateY(-50%);
+            animation: fadeIn 1s linear forwards;
+            animation-delay: 6s;
+            border: 2px solid #f093fb;
+    }
+    .phosphorus1{
+            position: absolute;
+            top:10vh;
+            left:15vw;
+    }
+    .phosphorus2{
+            position: absolute;
+            top:42vh;
+            left:10vw;
+            width:75vw;
+    }
+    .img-phosphorus{
+            opacity:0;
+            position:absolute;
+            left:18vw;
+            top:38vh;
+            width:25%;
+            transform: translateY(-50%);
+            animation: fadeIn 1s linear forwards;
+            animation-delay: 6s;
+            border: 2px solid #e2c58b;
+    }
+    .potassium1{
+            position: absolute;
+            top:10vh;
+            left:10vw;
+    }
+    .potassium2{
+            position: absolute;
+            top:45vh;
+            left:10vw;
+            width:75vw;
+    }
+    .img-potassium{
+            opacity:0;
+            position:absolute;
+            left:18vw;
+            top:35vh;
+            width:25%;
+            transform: translateY(-50%);
+            animation: fadeIn 1s linear forwards;
+            animation-delay: 6s;
+            border: 2px solid #4facfe;
+    }
+    .protein1{
+            position: absolute;
+            top:10vh;
+            left:10vw;
+    }
+    .protein2{
+            position: absolute;
+            top:53vh;
+            left:10vw;
+            width:75vw;
+    }
+    .img-protein{
+            opacity:0;
+            position:absolute;
+            left:18vw;
+            top:44vh;
+            width:30%;
+            transform: translateY(-50%);
+            animation: fadeIn 1s linear forwards;
+            animation-delay: 6s;
+            border: 2px solid #43e97b;
+    }
+    .selenium1{
+            position: absolute;
+            top:10vh;
+            left:10vw;
+    }
+    .selenium2{
+            position: absolute;
+            top:33vh;
+            left:10vw;
+            width:75vw;
+    }
+    .img-selenium{
+            opacity:0;
+            position:absolute;
+            left:18vw;
+            top:28vh;
+            width:30%;
+            transform: translateY(-50%);
+            animation: fadeIn 1s linear forwards;
+            animation-delay: 6s;
+            border: 2px solid #fa709a;
+    }
+    .a1{
+            position: absolute;
+            top:15vh;
+            left:10vw;
+            color:#1e8181;
+            width:77vw;
+            
+    }
+    .a2{
+            position: absolute;
+            top:63vh;
+            left:10vw;
+            width:75vw;
+            color:#1e8181;
+            
+    }
+    .img-a
+    {
+            opacity: 0;
+            position: absolute;
+            width: 40vw;
+            left: 18vw;
+            top: 53vh;
+            transform: translateY(-50%);
+            animation: fadeIn 1s linear forwards;
+            animation-delay: 5s;
+            border-radius: 50%;
+    }
+    .b1Text{
+        position: absolute;
+        top:10vh;
+        left:5vw;
+    }
+    .b1-1{
+        position: absolute;
+        top:15vh;
+        left:5vw;
+        color:#38615f;
+        
+    }
+    .b1-2{
+        position: absolute;
+        top:41vh;
+        left:5vw;
+        width:80vw;
+        color:#38615f;
+        
+    }
+    .img-b1
+    {
+        opacity: 0;
+        position: absolute;
+        width: 40vw;
+        left: 18vw;
+        top: 36vh;
+        transform: translateY(-50%);
+        animation: fadeIn 1s linear forwards;
+        animation-delay: 5s;
+        border-radius: 50%;
+    }
+    .b2Text{
+        position: absolute;
+        top:10vh;
+        left:5vw;
+    }
+    .b2Text h1{
+        font-size: 1.8em;
+    }
+    .b2-1{
+        position: absolute;
+        top:16vh;
+        left:5vw;
+        color:#8558a1;
+    }
+    .b2-2{
+        position: absolute;
+        top:47vh;
+        left:5vw;
+        width:80vw;
+        color:#8558a1;
+    }
+    .img-b2
+    {
+            opacity: 0;
+            position: absolute;
+            width: 40vw;
+            left: 18vw;
+            top: 41vh;
+            transform: translateY(-50%);
+            animation: fadeIn 1s linear forwards;
+            animation-delay: 5s;
+            border-radius: 50%;
+    }
+    .b12Text{
+        position: absolute;
+        top:10vh;
+        left:5vw;
+    }
+    .b12Text h1{
+        font-size: 1.8em;
+    }
+    .b12-1{
+        position: absolute;
+        top:17vh;
+        left:5vw;
+        color:#8D0B93;
+    }
+    .b12-2{
+        position: absolute;
+        top:61vh;
+        left:5vw;
+        width:80vw;
+        color:#8D0B93;
+    }
+    .img-b12
+    {
+        opacity: 0;
+        position: absolute;
+        width: 40%;
+        left: 22vw;
+        top: 53vh;
+        transform: translateY(-50%);
+        animation: fadeIn 1s linear forwards;
+        animation-delay: 5s;
+        
+    }
+    .b3Text{
+        position: absolute;
+        top:10vh;
+        left:5vw;
+    }
+    .b3-1{
+        position: absolute;
+        top:15vh;
+        left:5vw;
+        color:#90b0a5;
+    }
+    .b3-2{
+        position: absolute;
+        top:45vh;
+        left:5vw;
+        width:80vw;
+        color:#90b0a5;
+    }
+    .img-b3
+    {
+            opacity: 0;
+            position: absolute;
+            width: 40%;
+            left: 18vw;
+            top: 38vh;
+            transform: translateY(-50%);
+            animation: fadeIn 1s linear forwards;
+            animation-delay: 5s;
+    }
+    .b6Text{
+        position: absolute;
+        top:10vh;
+        left:5vw;
+    }
+    .b6Text h1{
+        font-size: 2em;
+    }
+    .b6-1{
+        position: absolute;
+        top:17vh;
+        left:5vw;
+        color:#d2691e;
+    }
+    .b6-2{
+        position: absolute;
+        top:50vh;
+        left:5vw;
+        width:80vw;
+        color:#d2691e;
+    }
+    .img-b6
+    {
+            opacity: 0;
+            position: absolute;
+            width: 30vw;
+            left: 19vw;
+            top: 45vh;
+            transform: translateY(-50%);
+            animation: fadeIn 1s linear forwards;
+            animation-delay: 5s;
+    }
+    .cText{
+        position: absolute;
+        top:10vh;
+        left:5vw;
+    }
+    .c1{
+        position: absolute;
+        top:17vh;
+        left:5vw;
+        color:#c5a1c7;
+    }
+    .c2{
+        position: absolute;
+        top:57vh;
+        left:5vw;
+        width:80vw;
+        color:#c5a1c7;
+    }
+    .img-c
+    {
+            opacity: 0;
+            position: absolute;
+            width: 30vw;
+            left: 18vw;
+            top: 47vh;
+            transform: translateY(-50%);
+            animation: fadeIn 1s linear forwards;
+            animation-delay: 5s;
+    }
+    .d1{
+        position: absolute;
+        top:16vh;
+        left:5vw;
+    }
+    .d2{
+        position: absolute;
+        top:45vh;
+        left:5vw;
+    }
+    .eText{
+        position: absolute;
+        top:10vh;
+        left:5vw;
+    }
+    .e1{
+        position: absolute;
+        top:15vh;
+        left:5vw;
+    }
+    .e2{
+        position: absolute;
+        top:50vh;
+        left:5vw;
+        width:80vw;
+    }
+    .img-e
+    {
+        opacity:0;
+        position:absolute;
+        width:40%;
+        left:18vw;
+        top:40vh;
+        transform: translateY(-50%);
+        animation: fadeIn 1s linear forwards;
+        animation-delay: 7s;
+        border:outset 2px #66a6ff;
+    }
+    .kText{
+        position: absolute;
+        top:10vh;
+        left:5vw;
+    }
+    .k1{
+        position: absolute;
+        top:15vh;
+        left:5vw;
+    }
+    .k2{
+        position: absolute;
+        top:50vh;
+        left:5vw;
+        width:80vw;
+    }
+    
+    .kale{
+        opacity:0;
+        position:absolute;
+        left:5vw;
+        top:40vh;
+        width:50%;
+        transform: translateY(-50%);
+        animation: fadeIn 1s linear forwards;
+        animation-delay: 6s;
+        border:outset 2px #d1fdff;
+        z-index: -2;
+    }
+    .zincText{
+        position: absolute;
+        top:10vh;
+        left:5vw;
+    }
+    .zinc1{
+        position: absolute;
+        top:17vh;
+        left:5vw;
+        color:#9890e3;
+    }
+    .zinc2{
+        position: absolute;
+        top:53vh;
+        left:5vw;
+        width:80vw;
+        color:#9890e3;
+    }
+    .img-zinc
+    {
+            opacity: 0;
+            position: absolute;
+            width: 40%;
+            left: 10vw;
+            top: 45vh;
+            transform: translateY(-50%);
+            animation: fadeIn 1s linear forwards;
+            animation-delay: 5s;
+    }
 }
